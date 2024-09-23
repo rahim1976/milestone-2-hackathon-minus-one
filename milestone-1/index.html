@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Resume</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="resume-display">
+        <img class="profile-img" src="./mypic.png" alt="Profile Image">
+        <fieldset class="fieldset-custom">
+            <legend>Rahim Ali</legend>
+            <p><strong>Email:</strong> unknownvision90@gmail.com</p>
+            <p><strong>Phone:</strong> +92 333-2659124</p>
+            <p><strong>Location:</strong> Karachi, Pakistan </p>
+        </fieldset>
+
+        <fieldset class="fieldset-custom">
+            <legend>Education</legend>
+            <p><strong>Matriculation in Computer Science</strong> - The Country School, 2022</p>
+            <p><strong>Intermediate in Computer Science</strong> - Govt. National College, 2024</p>
+        </fieldset>
+
+        <fieldset class="fieldset-custom special-section">
+            <legend>Certifications</legend>
+            <p>Diploma in Information Systems Management</p>
+        </fieldset>
+
+        <fieldset class="fieldset-custom">
+            <legend>Experience</legend>
+            <button id="toggle-experience" type="button" onclick="toggleSection('experience')">Show</button>
+            <div id="experience-section">
+                <p>Front-End Developer At SalactSol </p>
+            </div>
+        </fieldset>
+
+        <fieldset class="fieldset-custom">
+            <legend>Skills</legend>
+            <button id="toggle-skills" type="button" onclick="toggleSection('skills')">Show</button>
+            <div id="skills-section">
+                <p>Typing Speed 45WPM</p>
+                <p>Ms Office (Word, Excel, Powerpoint)</p>
+                <p>Knowledge of wordpress page bulding.</p>
+                <p>Understandings of MySQL, PHP & Laravel</p>
+                <p>Proficient In writing Clean, Semantic Code.</p>
+                <p>Time Management skills to handle deadlines.</p>
+                <p>Expertise in HTML, CSS, Bootstrap & Javascript</p>
+                <p>Strong Communications Skills with Team members.</p>
+            </div>
+        </fieldset>
+
+        <fieldset class="fieldset-custom">
+            <legend>Projects</legend>
+            <p><strong>Paper Verse (Book Store)</strong> - Technology Used: HTML, CSS & JavaScript.</p>
+            <p><strong>Daffodil Laundry (Laundry Bussiness)</strong> - Technology Used: HTML, CSS & Javascript. </p>
+            <p><strong>Extreme Computers (Computer Store).</strong> - Technology Used : Laravel/PHP.  </p>
+            <p><strong>JetSet Courier (Courier Service)</strong> - Technology Used: Core PHP.  </p>
+            <p><strong>Soccer Club (Sports) </strong> - Technology Used : Laravel/PHP, Bootstrap.  </p>
+        </fieldset>
+    </div>
+
+    <footer id="contact">
+        <p>Contact me: <a href="mailto:unknownvision90@gmail.com">unknownvision90@gmail.com</a></p>
+        <p>&copy; 2024 Static Resume By <b class="my-name">Rahim Ali</b>. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

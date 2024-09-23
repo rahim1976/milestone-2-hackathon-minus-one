@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+body {
+    margin: 20px;
+    padding: 0;
+    background: linear-gradient(135deg, #2c3e50, #34495e); 
+    min-height: 100vh;
+    color: #333;
+}
+
+form {
+    margin: auto;
+    background-color: #ffffff; 
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    max-width: 800px;
+    transition: transform 0.3s ease;
+}
+
+form:hover {
+    transform: scale(1.01);
+}
+
+.fieldset-custom {
+    border: none;
+    padding: 25px;
+    margin-bottom: 25px;
+    background-color: #405971; 
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.fieldset-custom:hover {
+    background-color: #34495e;
+}
+
+.fieldset-custom legend {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    color: #555;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+input, textarea {
+    margin-top: 6px;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0 0 5px rgba(0, 128, 255, 0.3);
+    border-color: #007bff;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+#skills-section, #experience-section, #projects-section, #education-section {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    padding: 0;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+#skills-section.show, #experience-section.show, #projects-section.show, #education-section.show {
+    max-height: 1000px;
+    opacity: 1;
+    padding: 20px 0;
+}
+
+.certification-section, .education-section, .skills-section, .experience-section {
+    border: 2px solid #007bff; 
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #ffffff; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.certification-section:hover, .education-section:hover, .skills-section:hover, .experience-section:hover {
+    background-color: #f0f8ff; 
+    border-color: #0056b3; 
+}
+
+#resume-display {
+    text-align: left;
+    padding: 30px;
+    background-color: transparent; 
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+#resume-display img.profile-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 170px; 
+    max-height: 170px;
+    border-radius: 50%;
+    box-shadow: 0 14px 20px rgba(0, 0, 0, 0.1);
+}
+
+#resume-display h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#resume-display p {
+    font-size: 16px;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: #ffff;
+}
+
+#resume-display {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+footer {
+    text-align: center;
+    color: #555;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer p {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
